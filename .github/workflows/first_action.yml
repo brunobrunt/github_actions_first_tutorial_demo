@@ -1,0 +1,10 @@
+name: First Workflow
+on: Workflow_dispatch   ## This event waits for the user to start this workflow manually.
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run:  echo " Bruno, Welcome to the world of GitHub actions!!!"
+      - name: Print Goodbye
+        run:  echo " Done - Bye!!!"
